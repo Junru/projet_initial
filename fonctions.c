@@ -214,6 +214,8 @@ void connectecamera(void * arg) {
 			message->put_jpeg_image(massage, jpimage);
 		
 		
+		
+		
 		//envoe message vers moniteur
 			if (write_in_queue(&queueMsgGUI, message, sizeof (DMessage)) < 0) {
 				message->free(message);
